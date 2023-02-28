@@ -3,11 +3,11 @@
     float: left;
 }
 .blue{
-    background-color: blue;
+    background-color: rgb(255, 238, 0);
     float: left;
     margin: 50px auto;
-    box-shadow:10px 10px 8px red;
-    border-radius: 10px 30px;
+    box-shadow:7px -4px 10px 10px rgb(255, 111, 0.5);
+    border-radius: 50px 50px 50px 50px;
     transform: rotate(60deg);
 }
 .yellow{
