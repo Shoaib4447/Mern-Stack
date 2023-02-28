@@ -1,0 +1,54 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
+
+/* Selector as Tag */
+div{
+    height: 50px;
+    width: 50px;
+    /* color: red; */
+    background-color: rgba(119, 244, 36, 0.703);
+}
+
+/* Selector as a class */
+.class{
+    background-color: purple;
+    height: 50px;
+    width: 100%;
+}
+
+/* Selector as a Id */
+#f{
+    background-color: black;
+    height: 100px;
+    color: white;
+    width: 100%;
+}
+
+/* Results = If we use all the selectors on same element it 
+    ->Id will be prefered then
+    ->class will be prefered then
+    ->tag will be prefered
+*/
+
+p{
+        /* Font Styles */
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-style: italic;
+        font-weight: 900;
+
+        /* Text Alignment */
+        text-align: center;
+        /* text-align: end;
+        text-align: justify;
+        text-align: start; */
+
+
+        /* Text Decoration */
+        text-decoration: line-through;
+        text-decoration: overline;
+        text-decoration-color: red;
+        text-decoration-thickness:2px ;
+        text-decoration-skip:objects;
+}
+
+
