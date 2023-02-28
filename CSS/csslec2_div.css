@@ -1,0 +1,37 @@
+/* div{
+    width: 250px;
+    height: 250px;
+    border:2px solid red;
+    padding: 20px 40px 30px 10px;
+    margin: 20px;
+} */
+
+/* If one thing is common in multiple classes then make a common class and to all of them such as box */
+.box{
+    height: 100px;
+    width: 100px;
+}
+.red{
+    background-color: red;
+    position: static;
+    /* static Position means default position  */
+}.blue{
+    background-color: blue;
+    position: relative;
+    /* Relative to static It can move but not leave it's space from the it's default position use x axis and y axis */
+    /* To move use these properties*/
+    left: 150px;
+    /* right: -50px; */
+    top: 50px;
+    /* bottom: -50px; */
+}.yellow{
+    background-color: yellow;
+    /* Realative to start of the document uses x y z axis. 3D swimming. left it's default position and start swiming*/
+    position: absolute;
+    top: 50px;
+    left: 200px;
+
+}.green{
+    background-color: green;
+    position: fixed;
+}
