@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background-color: rgb(255, 179, 66);
+}
+
+.flex{
+    height: 12vh;
+    width: 100%;
+} 
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70px;
+    background-color: rgb(255, 179, 66);
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-left: 50px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    
+}
+
+nav ul li a:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 3px;
+    padding:5px 10px;
+    color: #ffffff;
+    transition: .3s;
+}
+
+.gridcontainer{
+    display: grid;
+    grid-template:repeat(2,200px)/repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    justify-content: space-evenly   ;
+    align-items: center;
+    grid-template-columns: ;
+
+}
+.gridcontainer div{
+        background-color: azure;
+        box-shadow: 10px 10px 10px rgba(255, 238, 0, 0.632);
+        border-radius: 5px 5px;
+    }
+      
+.item{
+    justify-self: center;
+    align-self: center;
+}
+
+.item img{
+    height: 200px;
+}
+.item2{
+    grid-area: 1/1/2/6 ;
+    
+ }
+
+.item2 img{
+    float: left;
+}
+
+P{
+    margin-top: 20px;
+    margin-left: 20px;
+}

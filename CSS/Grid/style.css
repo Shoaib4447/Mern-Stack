@@ -1,0 +1,83 @@
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 1.2fr 0.4fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background: lightblue;
+    overflow: hidden;
+    grid-template-areas:
+    "nav nav nav nav"
+    "main p p p"
+    "content1 content2 content3 content4 "
+    "content5 content6 content7 content8"
+    "footer footer footer footer " ;
+}
+
+nav{
+    background-color: lightcoral;
+    grid-area: nav;
+}
+.item{
+    background: rgb(245, 150, 41);
+}
+
+.item img{
+    height: 200px;
+    width: 200px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    font-weight: 800;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.img{
+    background-color: lightgreen;
+    grid-area: main;
+}
+.paragraph{
+    background-color: linen;
+    grid-area: p;
+}
+.Content1{
+    background-color: lightskyblue;
+    grid-area: content1;
+}
+.Content2{
+    background-color: lightslategray;
+    grid-area: content2;
+}
+.Content3{
+    background-color:lightgray;
+    grid-area: content3;
+}
+.Content4{
+    background-color: rgb(46, 225, 46);
+    grid-area: content4;
+}
+.Content5{
+    background-color: rgb(245, 211, 41);
+    grid-area: content5;
+}
+.Content6{
+    background-color: rgb(223, 15, 0);
+    grid-area: content6;
+}
+.Content7{
+    background-color: rgb(245, 150, 41);
+    grid-area: content7;
+}
+.Content8{
+    background-color: rgb(41, 95, 245);
+    grid-area: content8;
+}
+
+footer{
+    background-color: rgb(136, 195, 255);
+    grid-area: footer;
+}
