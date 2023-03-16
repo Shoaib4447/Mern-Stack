@@ -1,0 +1,14 @@
+                                                        Responsiveness
+
+                        Day 1
+video 1.
+Topic: Percent vs fixed width
+ 
+.Always Use width in Percentage(%)    Avoid using Fixed Width
+
+
+video 2.
+Topic: Percentage on Child
+
+.
+
