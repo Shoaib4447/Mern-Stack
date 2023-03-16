@@ -10,5 +10,13 @@ Topic: Percent vs fixed width
 video 2.
 Topic: Percentage on Child
 
-.
+.Never use fixed width of child it may cause overflowing and cause some problems like (CSS is AWESOME)
+.never set a fixed height it may also cause overflowing issuses
+
+Video3
+Topic Avoid Height 
+
+.Never use fixed height whenever you need an extra space like some element have this height give it a padding instead of fixed height
+
+
 
