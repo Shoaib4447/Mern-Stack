@@ -1,0 +1,134 @@
+<script>
+// Question # 1
+
+/* If a person is under 18 then he  / she cannot enter the cafe.
+
+If a person is older thean 18 but under 23 then he / she can enter the cage
+but cannot enter premium center of the cafe
+
+If a person is older than 23 then he / she can enter the cafe and also enter the premium center
+
+ */
+
+//  Solution
+
+var yourAge = prompt('Enter you Age: ');
+
+if (yourAge< 18){
+    console.log('18+ Cafe you cannot enter');
+} 
+else if(yourAge > 18 && yourAge < 23){
+    console.log('Weclome to Cafe. Premium Cafe is allowed for 23+');
+}
+else{
+    console.log('Welcome to cafe and Preminum Cafe');
+}
+
+
+// --------------------------------------------------------
+
+
+// Question # 2
+
+/* Ali Abdullah and Bilal are in same class 
+
+In Python class:
+Ali's grades are 90, 85, 95.
+
+Abdullah's Grades are 90, 80, 85.
+
+Bilal's grades are 70, 50, 75.
+
+*/
+
+//  Solution
+
+// 1.Calculate the average score for each student and save the value in variable
+aliTotal = 90+85+95;
+ali_avg = (aliTotal/3);
+console.log('Ali Avg is' , ali_avg);
+
+
+abdullahTotal = 90+80+85;
+abdullah_avg = (abdullahTotal/3);
+console.log('Abdullah Avg is' , abdullah_avg);
+
+
+bilalTotal = 70+50+75;
+bilal_avg = (bilalTotal/3);
+console.log('Bilah Avg is' , bilal_avg);
+
+
+// 2.Find the highest average and log the student on the console who has the highest average.
+if(ali_avg > abdullah_avg && ali_avg > bilal_avg){
+    console.log('Ali Average is Greater');
+}
+else if(abdullah_avg > ali_avg && abdullah_avg > bilal_avg){
+    console.log('Abdullah Average is Greater');
+}else{
+    console.log('Bilal Average is Greater')
+}
+
+// --------------------------------------------------------
+
+// Question # 3
+
+// Solution
+// 1. Print even numbers from 130 to 150 on console
+console.log('Even numbers from 130 to 150');
+for (var i = 130; i <= 150 ; i++){
+    if (i%2===0){
+        console.log(i);
+    }
+}
+
+// // 2. Print numbers between 30 to 110, divisible by 7 on the console.
+console.log('Numbers between 30 to 110 divisible by 7');
+for(i = 30 ; i <=110; i++){
+    if(i%7==0){
+        console.log(i);
+    }
+}
+
+// --------------------------------------------------------
+
+// Question # 4
+
+// 1. Create a function called 'subtraction ', this function takes two arguments A adn B then subtracts one of these arguments from the other and returns the results then console log the result
+
+// 1.Solution
+function subtration(A,B){
+    result = A -B;
+    return result;
+}
+
+
+// 2.Create a function called 'isEven' this function will take one argument and check if its even then return true and console log the results
+// 2. Solution
+function isEven(number){
+    if(number%2===0){
+        console.log(true);
+    }
+    else{
+        console.log(false);
+    }
+}
+
+// Declare a function called 'calcAge' it is going to take birth year of user as an argument and then calculate the user's age return the result and console log it
+
+// 3. Solution
+function calcAge(year){
+    var d = new Date();
+    currentyear = d.getFullYear();
+    console.log('Birth Year: ' , year );
+    console.log('Current Year: ' , currentyear);
+    var count = 0;
+    for(var i = year; i !== currentyear; i++){
+        var age = i;
+        count+=1;
+    }
+    console.log('Your Age is: ',count)
+}
+
+
+</script>
