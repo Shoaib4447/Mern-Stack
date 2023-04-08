@@ -1,0 +1,230 @@
+<script>
+                    // Basics of Javascipt
+
+
+    // Variables
+
+
+
+    // We make website, softwares and applications to manage data 
+
+    // 1.Variables (Somethis that can variy or can be changeable. Variable number must be meaningfull )
+
+    // Declaration 
+
+    // A container that can hold data.
+    // variable value define which type of data it can hold  
+
+    // Number type data and every number in js is floating point number, blue style
+    var number = 20;
+    // name hold string type data black style
+    var name = 'Ali'; 
+
+    // Boolean type data ,cammel case Notation blue style
+    var isLoggedIn = true;
+    var yesOrNo = false;
+
+    // Undefined : Declared variable but it can't hold any type of data
+    var school;
+
+    // Null (We assign any variable with null value)
+    var nullVariable = null;
+
+
+    // Concatination
+    console.log('Hi ' + name);
+
+
+
+
+    //Console
+    
+
+
+    // is something that shows us an output on screen like broswer that compile html css and js to show us output on the screen
+
+    // output function
+    console.log(name);
+
+    // Input Function
+    // When we use prompt it stop compiling the hole page until user entered the input 
+    var yourName = prompt('Enter your name');
+
+
+
+
+    // Type Coercion
+
+
+
+    // When we concatinate number and string it console convert number type value into string type value and concatinate them and strings 
+
+    // Zabrdasti koe kam kerwana converting number into string forcefully is known as type coersion
+
+    // Type number
+    var num = 20;
+    // typle string
+    var boyName = 'Nazeer';
+    // Example
+    console.log(name + ' is ' + ' year old');
+
+
+
+
+    // Variable Mutation : We update the value of a variable as well its type of value as compared to it's orignal type and value
+
+    num = 'Twenty';
+
+
+
+
+
+    // Rules of variable naming
+
+    // 1.we can start with letters
+    // 2.with special characters ( _ ,$ )
+    // 3. cann't use keywords as a variable name (if, while, true , false , null, delete, for , function )
+
+
+    // Naming Notations 
+
+    // 1. Cammel Case ( isLoggedIn )
+
+
+
+
+
+    // Operators 
+
+
+    // 1. Arithmetic Operators
+        //    * , / , % , + , - ,
+
+
+    // 2. Logical Operators (true or false)
+        // used to compare value
+        //   > , <, >=, <= ,!=, !==
+
+        // automatically type coersion of variable w.r.t value or value w.r.t variable 
+        // == comparison based on equailty (it will check only value after type coersion without its type)
+
+        // === (it will check value as well as its type)
+
+        // Mostly used operator 90% to 95% (===,!==)
+
+
+
+        // 2 expression required for these operators
+        //   && , || , !
+
+
+
+
+
+
+
+
+
+
+
+
+        // Conditional Statements
+
+
+
+
+
+        /* if(condition)
+           if-else
+           if-else-if-else
+        */
+        
+        
+
+        // Ternary Operator
+        // syntax (exp)?true:false
+        g = 10;
+        (g > 10)?g+=10:g = 10;
+        y_Age = 20;
+        var isLegal = (y_Age>18)?true:false;
+        if(isLegal){
+            console.log('logged In')
+        }
+        else{
+            console.log('Not elligible')
+        }
+
+
+
+        // Switch 
+        // syntax case means possible outputs
+        // if you have only 2 case then only write 1 case and for 2nd one write default
+
+        // switch condition can be an expr number boolean
+
+        var number_Two = 9;
+        switch(number_Two>10){
+            // agr is case mn true he tu ye krdo
+            case true:
+                console.log("Swictch is True");
+                break;
+
+            default:
+                console.log('Switch is False');
+            // case false:
+            //     console.log('Switch is False')
+        }
+
+
+        switch(true){
+            // kin kin cases mn ans true a skta he
+            case (number_Two > 10):
+                console.log('I am > 10');
+                break;
+
+            case (number_Two < 10):
+                console.log('I am < 10')
+                break;
+            default:
+                console.log('I am default');
+                break;
+        }
+
+
+
+        // Tip 
+        // Question : I want to show string and number in one console and don't want to do type coerision how to achieve it?
+
+        // Answer : Replace + with , show both of them on the same console without type coerision.
+
+
+
+
+
+
+
+
+
+
+
+        // Iterative Structures
+
+        // To do a same work again and again we use loops (same nature of work)
+
+        /*
+        
+        // counter loop (if we know number of iterations then we will use for loop 1--100)
+        1. for 
+        */
+        for(var i=1 ; i <= 100; i++){
+            console.log(i);
+        }
+        
+        // Conditional Loop : I don't know how many times I want to runs this loop (tb tk ye kam kero jb tk)
+            // 2.while
+            var char;
+            while( char !== x){
+                console.log('Hi' + name);
+                char = prompt('Enter X/Y');
+            }
+</script>
