@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript lec # 2</title>
+</head>
+<body>
+    <script>
+
+    /* Functions (Block of code to reuse)
+        used to reduce redundancy.
+        simply call the function to perform the same piece of code
+
+        when we call the function and give an argument in the backet at the calling time of function argument is send in the backet and in the function argument is accepted in backet
+
+        1.Function Declaration
+            functoin functionName (arguments or parameters){
+                body
+            }
+        2.Function Expression
+            var variableName = function(){
+                body
+            }
+    */  
+    // 1.Function Declaration
+    function sayHi(name){
+        console.log('Hi '+ name);
+    }
+    // sayHi('Ali');
+
+
+    //  2.Function Expression
+    var changeMe = function(number){
+        // console.log('Hi ' + name);
+        return number * 10;
+    }
+    // console.log(changeMe(10));
+
+// -----------------------------------------------------
+
+    // Lexicon Scoping 
+
+    /* 1.gobal scope
+       2.local scope
+    */
+
+
+// ------------------------------------------------------
+
+    /* Array in js
+    // cosactive memory location used to store data of different types of data related and un related data but it must be related logically and indexes are used to access its data
+
+     size total number of data in array
+     indexes = size - 1 start from 0
+    */
+        var students = ['Ali','Ahmed', 'Abdullah'];
+        // console.log(students);
+
+        students[4] = 'Default';
+        // console.log(students);
+        students[3] = 'Default';
+        // console.log(students);
+            
+
+        var boolArray = [true,1,,'Ali',null];
+
+        var number = [1,2,3,4,5,6,7,8,9,10];  
+        // console.log(number);
+
+//    Another way to declare an empty array
+        var emptyArray = [];
+        var arr = new Array();
+
+
+        // Function of Array
+
+        // push(): used to add a value to array at the end
+        // pop(): used to remove a value from the end of  array 
+
+        arr.push(1);
+        arr.push(2);
+        arr.push(3);
+        // arr.pop();
+        // console.log(arr);
+
+
+        // unshift():used to add value at first index
+        // shift():used to remove or pop value from first index
+
+        arr.unshift(5);
+        console.log(arr);
+        // arr.shift();
+        // console.log(arr);
+
+        // indexof(): used to check the location of the value
+
+        // console.log(arr.indexOf(2));
+
+// ------------------------------------------------------
+
+        // Data Attribute
+        // console.log(arr.length);
+
+
+// ------------------------------------------------------
+
+    // slice (yhan sy yhan tk starting index inclusive hoga or last index exclusive)
+        // var newData = arr.slice(1,3);
+        // console.log(newData);
+
+
+// --------------------------------------------------------
+
+    // Loop on Array
+    // i is index of the array
+    // arr[i] is the values of the array
+    for (var i = 0; i<=arr.length;i++){
+        console.log(arr[i]);
+    }
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
