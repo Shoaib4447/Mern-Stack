@@ -1,0 +1,78 @@
+<script>
+
+    /* 
+    
+    Question # 1
+
+    write a function that takes an array of integers as input and returns the sum of all the even numbers in the array
+
+    Question # 2
+    Create an object that repesents a person with properties for their name, age, and occupation. Add a method to the object that returns a greeting message that includes their name and occupation using 'this' keyword.
+
+    Question # 3 
+    Given an array of strings, write a function that return a new array with all the strings that doesn't contain the letter 'a' in them
+
+    */
+
+    //--------------------- Solution----------------------
+
+
+    var result = [];
+    function sumOfEven(numArr){
+        var sum = 0;
+        numArr.forEach(function(num){
+            if (num % 2 === 0)
+                sum += num;
+        });
+        result.push(sum);
+    }
+    var myArr = [3, 6, 7, 8, 9, 10, 12, 14, 13, 11];
+    var sumOfGivenArr = sumOfEven(myArr);
+    console.log(result);
+
+
+    // ----------------------------------------------------
+
+    // Question # 2
+
+    var person = {
+        name:'Shoaib',
+        age:21,
+        occupation:'developer',
+        greeting:function(){
+            console.log('Hi my name is ',this.name, ' and I am a Mern stack', this.occupation);
+        }
+    };
+    // person.greeting();
+
+
+    // ----------------------------------------------------
+
+    // Question # 3
+
+    var stringArray = ['ali','basheer','nazeer','kabeer','top','bottom','up','down']
+    var emptyArray =[];
+    function filterArray(arr){
+        arr.forEach(function(name){
+            if(!name.includes('a')){
+                emptyArray.push(name);
+            }
+            return emptyArray;
+        })
+    };
+
+    // console.log(filterArray(stringArray));
+    // console.log(emptyArray.forEach(function(i){
+    //     console.log(i);
+    // }));
+
+    var filteredArray = [];
+    var stringArray = ['ali','basheer','nazeer','kabeer','top','bottom','up','down'];
+    stringArray.forEach(function(i) {
+        if (!i.includes('a'))
+        filteredArray.push(i);
+        return filteredArray;
+    });
+    console.log(filteredArray);
+    
+</script>

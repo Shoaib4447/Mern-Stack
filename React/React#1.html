@@ -1,0 +1,108 @@
+
+
+                    FrontEnd Development
+-----------------------------------------------------------
+React js library (knows component that which we made , and how to work together)
+
+purpose : 
+        1.make a content then show content (in form of html)
+        2.handle user interactivity (Event Handling)
+
+-----------------------------------------------------------
+React DOM  js Library (knows : How to take the componenet and make it show up in the DOM)
+
+
+-----------------------------------------------------------
+how to install react project
+
+
+
+
+
+-----------------------------------------------------------
+1.install Nodejs        (nodejs.org)
+    npm (node package manager)
+    npx (node package execute)
+2.Create React App
+    .go to specific directory
+
+3.open/Run React App/project
+    .npm start
+
+    stop react app (ctrl+c)
+
+
+4.error while running 
+    .port in use (Already in use so first close the app or stop it)
+
+
+-----------------------------------------------------------
+APP Insites
+
+scr folder: we write our source sode in it
+
+public: stores static files (media and html)
+
+node_modules: stores dependences (our app depend which  modules)
+
+package.json : records of dependences / project configration
+
+package_lock.json : record of version exact versions of all the packages
+
+-----------------------------------------------------------
+
+React code 3 steps
+
+1. import all dependences for this app
+    .import React from 'react';
+    .import ReactDOM from 'rect-dom';
+
+2. Make a React components
+
+    [what is React compoents?
+    It can be a function , class      1.(Produce Html to show to user) with the Help of 
+    
+    "JSX";
+
+    2.handle the user interact]
+    
+3. show the components (to show we need DOM for browser)
+
+-----------------------------------------------------------
+    <!-- Function as an Expression -->
+    const a container that cann'tbe changed
+    const App = function(){
+        return(
+            <!-- combination of 2 or more things can be returned -->
+            JSX => very close to HTML 
+            <div>
+                Hi There!
+            </div>
+        )
+    }
+
+//3rd step 
+ReactDOM.render(
+    <App/>,document.querySelect('#root')
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------
+babel: convert js code in broswer compatible code:ES5
+
+
+
