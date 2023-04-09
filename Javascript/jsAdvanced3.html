@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Lec # 3 (Objects)</title>
+</head>
+<body>
+    <script>
+        /* Ojects
+            Limitation on the arrays are almost removed we can add,remove,store different type of data but still we need objects get the values by name or property to get exactly what we want.
+            object is powerfull and it's scale ability make it more powerfull
+
+            We need to check that every index is co-related to the same index of the next array.
+
+            var arr = ['Ali','student',23,'leads'];
+            var arr1 = ['Ali','student',23,'leads'];
+            var arr2 = ['Ali','student','leads',23];
+
+            I need university of these students and I am expecting that their data is arranged in the same way so I am using same indexes to access their university
+
+            console.log(arr[3]); output leads
+            console.log(arr1[3]); output leads
+            console.log(arr2[3]); 
+            
+            output 23 
+            
+            which is not a university so I neeed to check manually that why we need objects 
+
+
+            key:values;       pairs
+            their are indexes also we can access data via a keys
+
+
+            Now do the same work with Objects
+        */
+
+        var student = {
+            // key:value
+        
+        // Attributes
+            name : 'Ali',
+            occupation : 'student',
+            age : 23,
+            university : 'leads'
+        };
+        var student2 = {
+            // key:value
+            university : 'leads',
+            occupation : 'student',
+            age : 25,
+            name : 'Ali'
+        };
+
+        var schoolName = 'university';
+
+        // console.log(student.university,student.age);
+        // console.log(student2.university,student2.age);
+
+
+        // Abstraction : Hiding the orignal variable variable
+        // console.log(student[schoolName]);
+
+
+// ---------------------Update the object -----------------
+            student.age=27;
+            // console.log(student.name,student.age);
+//---------------------------------------------------------
+
+
+
+// Array inside an object
+
+var student3 = {
+            // key:value
+        
+        // Attributes
+            name : 'shoaib',
+            occupation : 'student',
+            age : 23,
+            university : 'leads',
+            subjects:['english','urdu','math','physics']
+        };
+
+        // console.log(student3.name,student3.subjects.forEach(function(stud){
+        //     console.log(stud)
+        // }));
+
+
+/*-------------------------------------------------------
+ -----------------Object inside an object ---------------
+---------------------------------------------------------
+ */
+var student4 = {
+            // key:value
+        
+        // Attributes
+            name : 'shoaib',
+            occupation : 'student',
+            age : 23,
+            university : 'leads',
+            subjects:['english','urdu','math','physics'],
+            bestFriend:{
+                name : 'zohaib',
+                occupation : 'student',
+                age : 22,
+                university : 'GC',
+            }
+        };
+
+        // console.log(student4.name,student4.subjects.forEach(function(stud){
+        //     console.log(stud)
+        // }));
+
+        // console.log(student4.bestFriend.name);
+        // var bestFriendOfStudent4 = student4.bestFriend.name;
+        // console.log(bestFriendOfStudent4);
+
+// --------------------------------------------------------
+        //  Empty Objects Complex Data Structure
+        var colors = {};
+
+        // adding Properites in Objects
+        colors.orange = {
+            code:12345
+        }
+        colors.black = {
+            code:[1,2,3,4,5]
+        }
+        // console.log(colors.orange.code);
+        // console.log(colors.black.code[2]);
+
+
+
+/*-------------------------------------------------------
+ -----------------Object inside an Array ---------------
+---------------------------------------------------------
+ */
+// list of 3 post every post is an object
+
+var blogPost = [
+    {
+        tittle:'Pak vs India Match 1',
+        content:'The purple elephant danced under the moonlight, while a group of squirrels played a game of cards nearby.',
+        category:'cricket',
+        date:12
+
+    },
+    {
+        tittle:'Pak vs Austalia Match 2',
+        content:'The purple elephant danced under the moonlight, while a group of squirrels played a game of cards nearby.',
+        category:'cricket',
+        date:12
+    },
+    {
+        tittle:'Pak vs Afg Match 3',
+        content:'The purple elephant danced under the moonlight, while a group of squirrels played a game of cards nearby.',
+        category:'cricket',
+        date:12
+    }
+];
+
+// console.log(blogPost[0].tittle,'   ',blogPost[1].tittle);
+
+
+/* -------------------------------------------------------
+    function inside an object known as "Object Methods"
+---------------------------------------------------------*/
+
+
+var student5 = {
+            // key:value
+        
+        // Attributes
+            name : 'john',
+            occupation : 'student',
+            age : 23,
+            university : '2leads',
+            subjects:['english','urdu','math','physics'],
+            bestFriend:{
+                name : 'jorge',
+                occupation : 'student',
+                age : 22,
+                university : 'GC',
+            },
+            // Functions as an expression
+            sayHi:function(){
+                console.log('Hi', student5.name)
+            }
+        };
+
+        student5.sayHi()
+
+/* -------------------------THIS KEYWORD-------------------
+    if we want to access name inside an Object Method 
+    we have to write student5.name but this doesn't make sense 
+
+    so we will use "this" Keyword;
+
+    Gloval object:is the window.whole page. document is in the window
+
+    THIS keyword
+    1.Gloval object: when called in an ordinary function
+
+    2.this object:when called inside an object then the object is it's global scope. this keyword talks about the global scope in which entity it is called
+
+---------------------------------------------------------*/
+
+
+        // console.log('Hi', student5.name)
+
+        var student5 = {
+            // key:value
+        
+        // Attributes
+            name : 'john',
+            occupation : 'student',
+            age : 23,
+            university : '2leads',
+            subjects:['english','urdu','math','physics'],
+            bestFriend:{
+                name : 'jorge',
+                occupation : 'student',
+                age : 22,
+                university : 'GC',
+            },
+            // Functions as an expression
+            sayHi:function(){
+                console.log('Hi',this.name)
+            }
+        };
+
+        student5.sayHi()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------
+ --------------------namespace collision-----------------
+---------------------------------------------------------
+ They have same name and they are over writing eachother
+
+
+ function sayHi(){
+    
+ }
+ function sayHi(){
+    
+ }
+
+
+*/
+
+
+
+
+    </script>
+</body>
+</html>

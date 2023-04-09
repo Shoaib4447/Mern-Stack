@@ -113,12 +113,23 @@
 
 // --------------------------------------------------------
 
-    // Loop on Array
+    // Loop on Array:we use counter loop on array
+
     // i is index of the array
     // arr[i] is the values of the array
     for (var i = 0; i<=arr.length;i++){
         console.log(arr[i]);
     }
+
+
+
+    // forEach : used to iterate on array without using for loop
+
+    var students = ['abc','ali','ahmed',4,true];
+        
+        students.forEach(function(student){
+            console.log(student);
+        });
 
 
 
