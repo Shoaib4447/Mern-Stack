@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+
+
+    <!-- <style>
+        .mouseOver{
+            background-color: blue;
+            color: white;
+        }
+        .mouseOut{
+            background-color: white;
+            color: black;
+        }
+
+        .clicked{
+            text-decoration: line-through;
+        }
+        
+    </style> -->
+</head>
+<body>
+
+    <h1>To-Do List</h1>
+    <ul id="toDoList">
+        <li>Learn the Basics of website</li>
+        <li>Learn HTML and CSS</li>
+        <li>Learn Bootstrap</li>
+        <li>Learn Js</li>
+        <li>Learn React</li>
+    </ul>
+
+    <form action="">
+        <input type="text" name="item" id="listTextBox">
+        <input type="button"  value="Add New Item" id="listButton">
+    </form>
+    
+
+    <script>
+        
+        
+        function styleList(){
+        var style = document.querySelectorAll('li');
+        style.forEach(function (i) {
+            i.addEventListener('click', function () {
+                i.style.textDecoration = 'line-through';
+            })
+        });
+        style.forEach(function (i) {
+            i.addEventListener('mouseover', function () {
+                i.style.backgroundColor = 'Blue';
+                i.style.color = 'white';
+            })
+        });
+        style.forEach(function (i) {
+            i.addEventListener('mouseout', function () {
+                i.style.backgroundColor = 'white';
+                i.style.color = 'black';
+            })
+        });
+    }
+
+
+        styleList();
+        var btn = document.querySelector('#listButton');
+        btn.addEventListener('click',function(){
+            var textField = document.querySelector('#listTextBox').value;
+            var newNode = document.createElement('li');
+            var nodeData = document.createTextNode(textField);
+            newNode.appendChild(nodeData);
+            var myUl = document.querySelector('#toDoList');
+            myUl.appendChild(newNode);
+            // Clear the input field
+            document.querySelector("#listTextBox").value = '';
+            styleList();
+        })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To-Do List</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+		}
+		h1 {
+			text-align: center;
+		}
+		form {
+			margin: 20px auto;
+			width: 50%;
+			display: flex;
+			justify-content: center;
+		}
+		input[type="text"] {
+			flex: 1;
+			padding: 10px;
+			font-size: 16px;
+		}
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			padding: 10px 20px;
+			margin-left: 10px;
+			cursor: pointer;
+			font-size: 16px;
+		}
+		ul {
+			list-style-type: none;
+			padding: 0;
+		}
+		li {
+			padding: 10px;
+			background-color: #f2f2f2;
+			border-bottom: 1px solid #ddd;
+		}
+		li:last-child {
+			border-bottom: none;
+		}
+		.checked {
+			text-decoration: line-through;
+			color: #999;
+		}
+		.delete {
+			color: #f44336;
+			cursor: pointer;
+			float: right;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<h1>To-Do List</h1>
+	<form id="todo-form">
+		<input type="text" id="todo-input" placeholder="Add new item...">
+		<input type="submit" value="Add">
+	</form>
+	<ul id="todo-list"></ul>
+	
+	<script>
+		let todoList = document.getElementById("todo-list");
+		let todoForm = document.getElementById("todo-form");
+		let todoInput = document.getElementById("todo-input");
+		
+		function addTodo() {
+			event.preventDefault();
+			if (todoInput.value) {
+				let li = document.createElement("li");
+				let deleteButton = document.createElement("span");
+				deleteButton.innerHTML = "&#x2715;";
+				deleteButton.className = "delete";
+				li.appendChild(document.createTextNode(todoInput.value));
+				li.appendChild(deleteButton);
+				todoList.appendChild(li);
+				todoInput.value = "";
+				deleteButton.addEventListener("click", removeTodo);
+				li.addEventListener("click", completeTodo);
+			}
+		}
+		
+		function removeTodo() {
+			let li = this.parentNode;
+			li.parentNode.removeChild(li);
+		}
+		
+		function completeTodo() {
+			let li = this;
+			li.classList.toggle("checked");
+		}
+		
+		todoForm.addEventListener("submit", addTodo);
+	</script>
+</body>
+</html>
