@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(253, 58, 113);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hi{
+    /* height: 25rem; */
+    /* width: 40rem; */
+    /* margin: 0 auto; */
+    /* background-color: rgb(255, 0, 0); */
+}

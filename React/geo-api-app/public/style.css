@@ -1,0 +1,19 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1{
+    background-color: black;
+    color: white;
+}
+
+.img_dim{
+    height: 400px;
+    width: 600px;
+}

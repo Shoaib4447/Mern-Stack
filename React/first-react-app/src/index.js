@@ -1,4 +1,4 @@
-// Step:1 Import Dependences
+// Step:1 Import Dependencies
 import React from 'react';
 import  ReactDOM  from 'react-dom';
 // Components
@@ -16,8 +16,8 @@ const App = function(){
         // JSX => very close to HTML
         <div className='ui comments'>
             <FriendCard>
-                <SingleComment pic={profilePic3} name='Nadeem' time='Yestarday' text='Good Job'/>
-                <SingleComment pic={profilePic4} name='Shoaib' time='Yestarday' text='Good Job'/>
+                <SingleComment pic={profilePic3} name='Nadeem' time='Yesterday' text='Good Job'/>
+                <SingleComment pic={profilePic4} name='Shoaib' time='Yesterday' text='Good Job'/>
             </FriendCard>
             <FriendCard>
                 <SingleComment pic={profilePic} name='Ali' time='Today at 5:00PM' text='Thanks'/>
