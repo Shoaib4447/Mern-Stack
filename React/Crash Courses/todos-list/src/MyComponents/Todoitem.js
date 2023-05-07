@@ -1,9 +1,12 @@
 import React from 'react'
 
-export default function Todoitem() {
+
+export const TodoItem = ({todo})=> {
   return (
     <div>
-      <p>todo.js</p>
+      <h4>{todo.title}</h4>
+      <p>{todo.description}</p>
+      <button className='btn btn-danger'>Delete</button>
     </div>
-  )
+  ) 
 }

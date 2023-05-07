@@ -6,14 +6,12 @@ import './Hemisphere.css'
 import northHemis from './images/north.png';
 import southHemis from './images/south.jpg';
 
-
+// Updated this file using LC methods
 
 class App extends React.Component{
-  constructor(props){
-    super(props)
-
-
-    this.state = {latitude:null,errorMessage:null}
+  
+  state = {latitude:null,errorMessage:null}
+  componentDidMount(){
     window.navigator.geolocation.getCurrentPosition(
       (position)=>{
         this.setState({latitude:position.coords.latitude})

@@ -43,14 +43,19 @@ export default function Header(props) {
               <button className="btn btn-outline-success" type="submit">
                 Search
               </button>
-            </form>:'Search Bar not Working'}
+            </form>:' '}
           </div>
         </div>
       </nav>
     </div>
   )
 }
+Header.defaultProps = {
+  title: 'Your title here',
+  // searchBar: true
+}
 
 Header.prototype = {
-    
+    title:PropTypes.string,
+    searchBar:PropTypes.bool.isRequired
 }

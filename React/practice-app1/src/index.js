@@ -7,7 +7,7 @@ const App = function(){
     return(
         <div>
             <Greeting>
-                <Topic topic1='Component Nesting' topic2 = 'Component Resuseability' topic3 = 'Component Configration'/>
+                <Topic topic1='Component Nesting' topic2 = 'Component Reusability' topic3 = 'Component Configuration'/>
             </Greeting>
         </div>
         )
