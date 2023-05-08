@@ -1,9 +1,5 @@
 import React from 'react';
 
-
-
-
-
 const Hemisphere = (props)=>{
     return(
     <div className='card'>
