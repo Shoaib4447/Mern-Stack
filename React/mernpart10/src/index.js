@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import axios from 'axios';
+import SearchForm from './SearchForm';
+import ImagesList from './ImagesList';
 import './index.css';
+import './Hemisphere.css';
 import Hemisphere from './Hemisphere';
-import './Hemisphere.css'
 import northHemis from './images/north.png';
 import southHemis from './images/south.jpg';
 
@@ -64,40 +67,20 @@ import southHemis from './images/south.jpg';
 // Handling user Input
 class App extends React.Component{
 
-  state = {entry:''}
+  state = {images:[]}
 
-  onChangeInput = (event)=>{                       // Anything that will call this function will become it's event
-    console.log(event.target.value);          // Input is calling this function so 'input' will become argument as whole to it
-    this.setState({entry:event.target.value});
-  }
-  onFormSubmit = (event)=>{                      
-    event.preventDefault();
-    console.log(this.state.entry);
+  onSearchSubmit = async (entry)=>{
+    console.log(entry);
+    const response = await axios.get(`https://pixabay.com/api/?key=32142471-60e6cca62669b22dc1dfa8408&q=${entry}&image_type=photo`);
+    // console.log(response.data.hits);
+    this.setState({images:response.data.hits})
   }
 
-
-/* Uncontrolled Element
-  1.In uncontrolled Element the react doesn't know the value of input field any where
-  2.HTML input element set it's value = " "  
-*/
-
-
-/* controlled Element
-  1.In Controlled element the input value is controlled by the state which is object and we have key that control the value
-  2.In HTML the value = "" input is defined by state object 
-
-*/
-
-  render(){
+  render(){  
     return(
       <>
-        <form onSubmit={this.onFormSubmit} action="">
-          <input type="text" placeholder='Input'
-            // it is event of onChangeInput and if we want to call it on specific time then () will not be used It is being passed as a reference and it will be called on that event and if we use onChangeInput() on the go function then we will use() 
-            onChange={this.onChangeInput} // Entry value is updated}
-            value={this.state.entry}      // Now input value is controlled by state in controlled environment
-          />
-        </form>
+        <SearchForm title='FORM' onSearchSubmitProp = {this.onSearchSubmit}/>
+        <ImagesList images = {this.state.images} />
       </>
     )
   }
