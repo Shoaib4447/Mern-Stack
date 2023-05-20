@@ -1,5 +1,6 @@
 import React from 'react';
 import ContactImg from './Images/contact.jpg';
+
 const Contact = () => {
   return (
   <div className='container text-center'>
