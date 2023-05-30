@@ -31,7 +31,7 @@ const App = ()=> {
   }
 
   useEffect(()=>{
-    searchMovies('');
+    searchMovies('Terminator');
   },[]);
 
   console.log(movies);
