@@ -23,6 +23,9 @@ const NavBar = () => {
                     <li className='nav-item'>
                     <NavLink className='nav-link' aria-current='page' to='/contact'>Contact</NavLink>
                     </li>
+                    <li className='nav-item'>
+                    <NavLink className='nav-link' aria-current='page' to='/api'>API</NavLink>
+                    </li>
                 </ul>
                 </div>
             </div>

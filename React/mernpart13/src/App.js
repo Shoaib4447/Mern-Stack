@@ -6,6 +6,7 @@ import Blog from './Components/Blog';
 import Contact from './Components/Contact';
 import Card from './Components/Card';
 import NavBar from './Components/NavBar';
+import ApiTest from './ApiTest';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route  path='/about' Component={About}></Route>
         <Route  path='/blog' Component={Blog}></Route>
         <Route  path='/contact' Component={Contact}></Route>
+        <Route  path='/api' Component={ApiTest}></Route>
         <Route  path='/card/:user' Component={Card}></Route>
       </Routes>
     </BrowserRouter>
