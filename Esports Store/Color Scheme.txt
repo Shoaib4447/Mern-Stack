@@ -1,0 +1,25 @@
+Template Link = https://overworld.qodeinteractive.com/
+
+Font Family: Helvetica Neue
+
+Primary Color = #37105C Purple
+Secondary Color #ffffff
+Accent Color = #6B54B6 Hover Color
+Light Black Color = #1B0E22 Section Background
+Light Black Color 2 = #150F1A Section Background
+Text Secondary Color = #7228E2
+Form Field Background = #22152C
+Red Color = #FF3147
+
+
+<li className="nav-item">
+              <a className="navbar-brand " href="#" >
+                <img className='img-fluid' width='60' src={Logo} alt="" />
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link active" aria-current="page" href="#">Blog</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
