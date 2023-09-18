@@ -1,0 +1,31 @@
+*{
+    font-family: Titillium Web;
+}
+
+h4{
+    font-size: 28px;
+    font-weight: 800;
+    /* filter: brightness(10) saturate(10) contrast(10); */
+}
+
+.background-section-cta{
+    position: relative;
+    background-image: url('../../Asserts/CTA.jpg');
+    padding-top: 7%;
+    padding-bottom: 7%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    z-index: 2;
+}
+
+.overlay-CTA{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#ffc411;
+    opacity: 0.8;
+    z-index: -1;
+}

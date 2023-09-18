@@ -1,0 +1,39 @@
+*{
+    font-family: Titillium Web;
+}
+
+h4{
+    font-size: 28px;
+    font-weight: 800;
+}
+
+h5{
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.upper-footer-bg{
+    background-color: #111111;
+    padding:4% 10px;
+}
+
+.Apps{
+    border: 1px solid #ececec;
+}
+
+.Apps:hover{
+    background-color: #FFC311;
+    color: white;
+    border: 1px solid #FFC311;
+}
+
+.icons-hover:hover{
+    color: #FFC311;
+}
+.platform-hover:hover{
+    color: #ffffff;
+}
+
+.country-margin{
+    margin-left: 35px;
+}

@@ -1,0 +1,30 @@
+
+*{
+    font-family: Titillium Web;
+}
+
+.section-padding{
+    padding-top: 6%;
+    padding-bottom:6%;
+}
+
+.field-border{
+    margin-right: 30px;
+    border: 1px solid #ececec !important;
+}
+
+input#Message {
+    padding-top: 16px;
+    padding-bottom: 70px;
+    padding-left: 20px;
+    width: 80%;
+}
+
+.btn-border{
+    border: 1px solid #FFC311 !important;
+    color: #0E1111;  
+}
+.btn-border:hover{
+    background-color: #FFC311;
+    color: #ffffff !important;  
+}

@@ -1,0 +1,11 @@
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faCaretRight,faPhone,faEnvelope,faMapSigns,faClock} from '@fortawesome/free-solid-svg-icons';
+
+<ul className="fa-ul">
+   <li>
+     <span className="fa-li">
+       <FontAwesomeIcon className='text-warning' icon={faCaretRight}></FontAwesomeIcon>
+     </span>
+     Home
+   </li>
+</ul>

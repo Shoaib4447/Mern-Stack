@@ -1,0 +1,38 @@
+.Header-Icons{
+    display: flex;
+    justify-content: start;
+    align-items:start;
+}
+
+
+.btn1{
+    padding: 5px 20px;
+    border-right: 0.5px solid #ececec;
+    border-radius: 40px 0px 0px 40px;
+}
+.btn2{
+    padding: 5px 20px;
+    border-left: 0.5px solid #ececec;
+    border-radius: 0px 40px 40px 0px;
+}
+.icons-hover{
+    color:white;    
+}
+
+.icons-hover:hover{
+    color: #FFC311;
+}
+
+
+ 
+ .center-desktop {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 767px) {
+    .center-desktop {
+        display: flex;
+        justify-content: start;
+    }
+}

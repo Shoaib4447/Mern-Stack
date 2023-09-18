@@ -1,0 +1,153 @@
+*{
+    font-family: Titillium Web;
+}
+
+.c-label{
+    font-size: 60px;
+    font-weight: 800;
+}
+.c-label span{
+    color: #FFC311;
+}
+
+/* Carosel Background Image Height */
+.c-item{
+    /* height of image carosel */
+    height: 510px;
+}
+
+.c-img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.4);
+}
+
+.c-button{
+    border-bottom: 1px solid #FFC311;
+    color:#FFC311;
+    font-weight: 500;
+    margin-top: 12px;
+}
+.c-button:hover{
+    background-color:#FFC311 ;
+    color:white;
+    transition: .5s ease-in-out;
+}
+
+/* About Section Heading */
+.About-label{
+    font-size: 50px;
+    font-weight: 800;
+    margin-top: 12px;
+}
+
+.section-padding{
+    padding-top: 12%;
+    padding-bottom:12%;
+}
+
+.col-padding{
+    padding-left: 60px;
+}
+
+.mt-top{
+    margin-top: 12px;
+}
+
+/* Victory Section */
+.background-section{
+    background-image: url('../../Asserts/esport-victories-bg.jpg');
+    position: relative;
+    display: block;
+}
+
+/* Victory Box 1  */
+.victory-numbers-1{
+    position: absolute;
+    top: 90%; 
+    left: 9%; 
+    transform: translate(-50%, -50%);
+    border: 3px solid #FFC311;
+    padding: 10px 10px;
+    font-size: 20px;
+    font-weight: 800; 
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.victory-desc-1{
+    position: absolute;
+    top: 88%; 
+    left: 21%; 
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: white;
+ } 
+ 
+.victory-heading-1{
+    position: absolute;
+    top: 92%; 
+    left: 21%; 
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+} 
+/* Victory Box 2 */
+
+.victory-numbers-2{
+    position: absolute;
+    top: 90%; 
+    left: 40%; 
+    transform: translate(-50%, -50%);
+    border: 3px solid #FFC311;
+    padding: 10px 10px;
+    font-size: 20px;
+    font-weight: 800; 
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.victory-desc-2{
+    position: absolute;
+    top: 88%; 
+    left: 52%; 
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: white;
+}
+.victory-heading-2{
+    position: absolute;
+    top: 92%; 
+    left: 52%; 
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+}
+/* Victory Box 3 */
+.victory-numbers-3{
+    position: absolute;
+    top: 90%; 
+    left: 70%; 
+    transform: translate(-50%, -50%);
+    border: 3px solid #FFC311;
+    padding: 10px 10px;
+    font-size: 20px;
+    font-weight: 800; 
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.victory-desc-3{
+    position: absolute;
+    top: 88%; 
+    left: 82%; 
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: white;
+}
+.victory-heading-3{
+    position: absolute;
+    top: 92%; 
+    left: 82%; 
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+}

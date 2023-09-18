@@ -6,3 +6,21 @@ Secondary-Section Background: #20242F
 Black : #000000
 Accent : #F3BA18
 White : #ffffff
+
+Footer - Template 
+https://preview.themeforest.net/item/rivendell-multipurpose-game-wordpress-theme/full_screen_preview/21201119?_ga=2.18642809.1376743018.1692467511-1291101302.1692291832&_gac=1.80822629.1692335136.CjwKCAjwivemBhBhEiwAJxNWNwFa5T2vyouy583WbWihZqLzTpYwgJrgjs36pzuwRV4pyMEbe0w1TRoCeBQQAvD_BwE
+
+Yellow:#FFC311;
+White:#FFFFFF;
+Black:#111111;
+Dark-Black;
+Text-Color:#777777;
+
+Banner Typography
+font-family: 'Titillium Web
+display: inline-block;
+font-size: 6.538rem;
+line-height: 6.538rem;
+font-weight: 800;
+margin-bottom: 2.692rem;
+text-transform: uppercase
