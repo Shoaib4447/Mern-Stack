@@ -45,7 +45,7 @@ const Contact = () => {
       </div>
       </section> 
       
-      <section className='section-padding'>
+      <section className='section-padding-contact'>
       <div className="container">
         <div className="grid">
           <div className="row">
@@ -102,7 +102,7 @@ const Contact = () => {
               </form>
             </div>
             <div className="col-md-5 p-5 d-flex flex-column">
-              <h4 className='text-black'>CONTACT<span className='text-warning'>DETAILS</span></h4>
+              <h4 className='text-black'>CONTACT<span className='text-warning'> DETAILS</span></h4>
                 <a className='mt-4 text-decoration-none' href='tel:123456789'>
                     <FontAwesomeIcon className='text-warning fs-5 fa-1x' icon={faPhone}/>
                     <span className='ms-3 text-black'><b className='fs-5'>Phone</b> : 123-456-(789)</span>

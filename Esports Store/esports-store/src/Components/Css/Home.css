@@ -55,10 +55,9 @@
 }
 
 /* Victory Section */
-.background-section{
+.victory-background{
     background-image: url('../../Asserts/esport-victories-bg.jpg');
     position: relative;
-    display: block;
 }
 
 /* Victory Box 1  */
@@ -150,4 +149,12 @@
     font-size: 20px;
     font-weight: 800;
     color: white;
+}
+
+
+/* Trailer Background */
+.trailer-background{
+    background-image: url('../../Asserts/trailersection.jpg');
+    position: relative;
+
 }

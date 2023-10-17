@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './Css/Home.css';
 import CTA from './CTA';
@@ -10,32 +10,16 @@ import heroimg2 from '../Asserts/Heroimg2.jpg';
 import aboutTeam from '../Asserts/esport-about-team.jpg';
 import teamvictory from '../Asserts/esport-victories.jpg';
 import Social from './Social';
+import tailercoloum from '../Asserts/trailercoloumn.jpg'
+import sponsorcoloumn from '../Asserts/sponsorcoloumn.jpg'
 
 
 const Home = () => {
-    // Learn Redux to Achieve this Filter Category
-    // const items = [
-    //     { id: 1, name: 'Item 1', category: 'ALL' },
-    //     { id: 2, name: 'Item 2', category: 'CALL OF DUTY' },
-    //     { id: 2, name: 'Item 2', category: 'CS GO' },
-    //   ];
-
-    //   const [selectedCategories, setSelectedCategories] = useState([]);
-    //   const toggleCategory = (category) =>{
-
-    //   }
-      
-
 
   return (
     <>
-          {/* Hero Section */}
-    <div id='carouselExampleCaptions' className='carousel slide carousel-fade'>
-        {/* <div className='carousel-indicators'>
-            <button type='button' data-bs-target='#carouselExampleCaptions' data-bs-slide-to='0' className='active' aria-current='true' aria-label='Slide 1'></button>
-            <button type='button' data-bs-target='#carouselExampleCaptions' data-bs-slide-to='1' aria-label='Slide 2'></button>
-            <button type='button' data-bs-target='#carouselExampleCaptions' data-bs-slide-to='2' aria-label='Slide 3'></button>
-        </div> */}
+        {/* Hero Section */}
+        <div id='carouselExampleCaptions' className='carousel slide carousel-fade'>
         <div className='carousel-inner'>
             <div className='carousel-item active c-item d-flex flex-column align-items-start'>
             <img src={heroimg1} className='d-block w-100 img-fluid c-img' alt='Heroimg 1 not working' />
@@ -66,7 +50,7 @@ const Home = () => {
     </div>
 
     {/* About Section */}
-    <div className='container section-padding z-1'>
+    <div className='container section-padding'>
         <div className='grid'>
             <div className='row'>
                 <div className='col-md-5'>
@@ -83,7 +67,7 @@ const Home = () => {
         </div>
     </div>
     {/* Victory Section */}
-    <section className='section-padding background-section z-1'>
+    <section className='section-padding victory-background z-1'>
         <div className='container  '>
             <div className='grid'>
                 <div className='row'>
@@ -118,33 +102,31 @@ const Home = () => {
         <div className='grid'>
             <div className='row'>
                 <div className='col-md-5 '>
-                    <img className='img-fluid' src={aboutTeam} alt='About Section Image not Working' />
+                    <img className='img-fluid shadow' src={aboutTeam} alt='About Section Image not Working' />
                 </div>
                 <div className='col-md-7 col-padding col-mb-p-none d-flex flex-column align-items-start justify-content-center'>
                     <h3 className='About-label'>OUR TEAMS
                         <br/><span className='text-warning mrgn-top'>& PLAYERS</span>
                     </h3>
                     <p className='mt-top'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex lorem.</p>
-                    {/* <div className='btn rounded-0 c-button '>READ MORE <i className=' bi-caret-right-fill'></i></div> */}
                 </div>
             </div>
         </div>
     </div>
     
     {/* All Videos and Trailers Section */}
-    <section className='section-padding background-section z-1'>
+    <section className='section-padding trailer-background z-1'>
         <div className='container  '>
             <div className='grid'>
                 <div className='row'>
                 <div className='col-md-5 '>
-                        <img className='img-fluid' src={aboutTeam} alt='About Section Image not Working' />
+                        <img className='img-fluid shadow' src={tailercoloum} alt='tailercoloum Image not Working' />
                     </div>
                 <div className='col-md-7 col-padding col-mb-p-none d-flex flex-column align-items-start justify-content-center'>
                         <h3 className='About-label text-white'>ALL VIDEOS <br/><span className='text-warning mrgn-top'>& TRAILERS</span></h3>
                         <p className='mt-top text-white'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex lorem.</p>
                         <div className='btn rounded-0 c-button '>ALL VIDEOS</div>
                     </div>
-                    
                 </div>
             </div>
         </div>
@@ -156,7 +138,7 @@ const Home = () => {
         <div className='grid'>
             <div className='row'>
                 <div className='col-md-5'>
-                    <img className='img-fluid' src={aboutTeam} alt='About Section Image not Working' />
+                    <img className='img-fluid shadow' src={sponsorcoloumn} alt='sponsorcoloumn Image not Working' />
                 </div>
                 <div className='col-md-7 col-padding col-mb-p-none d-flex flex-column align-items-start justify-content-center'>
                     <h3 className='About-label'>BECOME A <br/><span className='text-warning mrgn-top'>SPONSOR</span></h3>

@@ -48,7 +48,7 @@ const Header = () => {
                   <div className='collapse navbar-collapse' id='navbarNav'>
                     <ul className='navbar-nav'>
                       <li className='nav-item'>
-                        <NavLink className='nav-link text-black text-uppercase mx-2' aria-current='page' to='/s'><strong>Home</strong></NavLink>
+                        <NavLink className='nav-link text-black text-uppercase mx-2' aria-current='page' to='/'><strong>Home</strong></NavLink>
                       </li>
                       <li className='nav-item'>
                         <NavLink className='nav-link text-black text-uppercase  mx-2' to='/about'><strong>About Us</strong></NavLink>

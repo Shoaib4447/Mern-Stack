@@ -1,11 +1,13 @@
 import React from 'react';
 import './Css/About.css';
 import Banner from './Banner';
+import { Link} from 'react-router-dom';
 // import App from '../App';
 // Images
-import games from '../Asserts/vehicle-staring.png';
-import support from '../Asserts/rocket.png';
-import apps from '../Asserts/console.png';
+import games from '../Asserts/console.png'
+import support from '../Asserts/vehicle-staring.png';
+import apps from '../Asserts/rocket.png';
+
 
 
 const About = () => {
@@ -37,8 +39,7 @@ const About = () => {
                       <p className='text-warning'>DOCUMENTATIONS & SUPPORT</p>
                       <h4 className='text-white'>HELP CENTER</h4>
                       <p className='text-white fs-6'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, et! classname='text-white'</p>
-                      <div className='btn rounded-0 c-button'> CONTACT <i className=' bi-caret-right-fill'></i></div>
-                      
+                      <div className='btn rounded-0 c-button'>CONTACT<i className='bi-caret-right-fill'></i></div>
                     </div>
                   </div>
                 </div>
@@ -59,12 +60,12 @@ const About = () => {
                     </div>
                     <div className="col-md-4 col-sm-12 d-flex flex-column  align-items-center p-4">
                       <img className='img-fluid mb-4' width={90} src={support} alt="Games Icon" />
-                      <h4 className='text-warning'>BEST GAMES</h4>
+                      <h4 className='text-warning'>SUPPORT</h4>
                       <p className='text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dolorum eius, delectus laborum dolorem pariatur illum eaque fugit neque expedita.</p>
                     </div>
                     <div className="col-md-4 col-sm-12 d-flex flex-column  align-items-center p-4">
                       <img className='img-fluid mb-4' width={90} src={apps} alt="Games Icon" />
-                      <h4 className='text-warning'>BEST GAMES</h4>
+                      <h4 className='text-warning'>MOBILE APPS</h4>
                       <p className='text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dolorum eius, delectus laborum dolorem pariatur illum eaque fugit neque expedita.</p>
                     </div>
                   </div>

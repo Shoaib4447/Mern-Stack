@@ -1,0 +1,236 @@
+.team_img-1{
+    background-image: url('../../Asserts/team1.jpg');
+    padding: 20% 15%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.team_img-2{
+    background-image: url('../../Asserts/team2.jpg');
+    padding: 20% 15%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.team_img-3{
+    background-image: url('../../Asserts/team3.jpg');
+    padding: 20% 15%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.team_img-4{
+    background-image: url('../../Asserts/team4.jpg');
+    padding: 20% 15%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.team_img-5{
+    background-image: url('../../Asserts/team5.jpg');
+    padding: 20% 15%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.team_img-6{
+    background-image: url('../../Asserts/team6.jpg');
+    padding: 20% 15%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+.bg-name{
+    background-color: #FFC311;
+}
+
+
+/* IMAGES OVERLAY 1 */
+.team_img-1 {
+    position: relative;
+    overflow: hidden;
+}
+
+.team_img-1 p {
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.team_img-1:hover p {
+    transform: translateY(150%);
+}
+
+.team_img-1::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.team_img-1:hover::before {
+    opacity: 1;
+}
+
+/* IMAGES OVERLAY 2 */
+  
+.team_img-2 {
+    position: relative;
+    overflow: hidden;
+}
+
+.team_img-2 p {
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.team_img-2:hover p {
+    transform: translateY(150%);
+}
+
+.team_img-2::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.team_img-2:hover::before {
+    opacity: 1;
+}
+/* IMAGES OVERLAY 3 */
+  
+.team_img-3 {
+    position: relative;
+    overflow: hidden;
+}
+
+.team_img-3 p {
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.team_img-3:hover p {
+    transform: translateY(150%);
+}
+
+.team_img-3::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.team_img-3:hover::before {
+    opacity: 1;
+}
+/* IMAGES OVERLAY 4 */
+  
+.team_img-4 {
+    position: relative;
+    overflow: hidden;
+}
+
+.team_img-4 p {
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.team_img-4:hover p {
+    transform: translateY(150%);
+}
+
+.team_img-4::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.team_img-4:hover::before {
+    opacity: 1;
+}
+/* IMAGES OVERLAY 5 */
+  
+.team_img-5 {
+    position: relative;
+    overflow: hidden;
+}
+
+.team_img-5 p {
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.team_img-5:hover p {
+    transform: translateY(150%);
+}
+
+.team_img-5::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.team_img-5:hover::before {
+    opacity: 1;
+}
+/* IMAGES OVERLAY 6 */
+  
+.team_img-6 {
+    position: relative;
+    overflow: hidden;
+}
+
+.team_img-6 p {
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.team_img-6:hover p {
+    transform: translateY(150%);
+}
+
+.team_img-6::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.team_img-6:hover::before {
+    opacity: 1;
+}
+  

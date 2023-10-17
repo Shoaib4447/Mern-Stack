@@ -22,7 +22,7 @@ const CTA = () => {
           <div className='container z-1'>
             <div className='grid'>
               <div className='row'>
-                <div className='col d-flex justify-content-center'>
+                <div className='col-sm-12 d-flex justify-content-center'>
                   <h4 className='text-white'>NEWSLETTER:  </h4>
                   <form className=' z-3' 
                     onSubmit={formik.handleSubmit}>
